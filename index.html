@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estudio Jurídico Germán Wettstein | Abogados en Buenos Aires</title>
+  <title>Germán Wettstein | Abogado en Barcelona y Buenos Aires</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
@@ -65,23 +65,23 @@
 
     .nav-logo {
       font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 600;
       color: var(--gold);
       text-decoration: none;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
 
     .nav-links {
       display: flex;
       list-style: none;
-      gap: 2.5rem;
+      gap: 2rem;
     }
 
     .nav-links a {
       color: var(--light);
       text-decoration: none;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 400;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -182,8 +182,8 @@
     .hero-logo-container {
       margin-bottom: 2rem;
       position: relative;
-      width: 220px;
-      height: 220px;
+      width: 200px;
+      height: 200px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -196,11 +196,11 @@
     }
 
     .hero-subtitle {
-      font-size: 0.9rem;
-      letter-spacing: 6px;
+      font-size: 0.85rem;
+      letter-spacing: 4px;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       font-weight: 400;
     }
 
@@ -208,7 +208,7 @@
       font-size: clamp(2.5rem, 6vw, 4.5rem);
       font-weight: 500;
       line-height: 1.15;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       color: var(--white);
     }
 
@@ -216,10 +216,19 @@
       color: var(--gold);
     }
 
-    .hero-description {
+    .hero-tagline {
       font-size: 1.1rem;
       color: var(--gray);
-      max-width: 600px;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    .hero-description {
+      font-size: 1rem;
+      color: var(--gray);
+      max-width: 650px;
       margin: 0 auto 2.5rem;
       font-weight: 300;
     }
@@ -264,6 +273,17 @@
     .btn-secondary:hover {
       border-color: var(--gold);
       color: var(--gold);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: var(--white);
+      border: 2px solid #25D366;
+    }
+
+    .btn-whatsapp:hover {
+      background: transparent;
+      color: #25D366;
     }
 
     .scroll-indicator {
@@ -329,12 +349,12 @@
       font-weight: 300;
     }
 
-    /* ABOUT SECTION */
-    .about {
+    /* PERFIL PROFESIONAL */
+    .perfil {
       background: var(--dark-secondary);
     }
 
-    .about-grid {
+    .perfil-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 5rem;
@@ -343,20 +363,20 @@
       align-items: center;
     }
 
-    .about-image {
+    .perfil-image {
       position: relative;
       height: 500px;
       overflow: hidden;
     }
 
-    .about-image img {
+    .perfil-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       filter: grayscale(30%) brightness(0.8);
     }
 
-    .about-image::after {
+    .perfil-image::after {
       content: '';
       position: absolute;
       inset: 0;
@@ -365,24 +385,24 @@
       pointer-events: none;
     }
 
-    .about-content h2 {
+    .perfil-content h2 {
       font-size: 2.5rem;
       margin-bottom: 1.5rem;
       color: var(--white);
     }
 
-    .about-content h2 span {
+    .perfil-content h2 span {
       color: var(--gold);
     }
 
-    .about-content p {
+    .perfil-content p {
       color: var(--gray);
       margin-bottom: 1.5rem;
       font-weight: 300;
       line-height: 1.8;
     }
 
-    .about-stats {
+    .perfil-stats {
       display: flex;
       gap: 3rem;
       margin-top: 3rem;
@@ -404,9 +424,63 @@
       margin-bottom: 0;
     }
 
+    /* JURISDICCIONES */
+    .jurisdicciones {
+      background: var(--dark);
+    }
+
+    .jurisdicciones-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .jurisdiccion-card {
+      background: var(--dark-secondary);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 3rem 2.5rem;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .jurisdiccion-card:hover {
+      border-color: rgba(201, 168, 76, 0.3);
+      transform: translateY(-5px);
+    }
+
+    .jurisdiccion-card h3 {
+      font-size: 1.8rem;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .jurisdiccion-card .subtitle {
+      font-size: 0.9rem;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+
+    .jurisdiccion-card p {
+      color: var(--gray);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .jurisdiccion-areas {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
     /* PRACTICE AREAS */
     .practice-areas {
-      background: var(--dark);
+      background: var(--dark-secondary);
     }
 
     .practice-grid {
@@ -418,7 +492,7 @@
     }
 
     .practice-card {
-      background: var(--dark-secondary);
+      background: var(--dark);
       border: 1px solid rgba(255, 255, 255, 0.05);
       padding: 3rem 2.5rem;
       position: relative;
@@ -462,7 +536,7 @@
       color: var(--white);
     }
 
-    .practice-card > p {
+    .practice-card p {
       color: var(--gray);
       font-size: 0.95rem;
       margin-bottom: 1.5rem;
@@ -513,21 +587,21 @@
       gap: 1rem;
     }
 
-    /* FEATURED SECTION WITH BACKGROUND */
-    .featured {
+    /* BINACIONAL SECTION */
+    .binacional {
       position: relative;
       padding: 10rem 3rem;
       overflow: hidden;
     }
 
-    .featured-bg {
+    .binacional-bg {
       position: absolute;
       inset: 0;
       background: url('uba-2.jpg') center/cover no-repeat;
       filter: brightness(0.2) grayscale(50%);
     }
 
-    .featured-overlay {
+    .binacional-overlay {
       position: absolute;
       inset: 0;
       background: linear-gradient(
@@ -537,28 +611,25 @@
       );
     }
 
-    .featured-content {
+    .binacional-content {
       position: relative;
       z-index: 2;
-      max-width: 1200px;
+      max-width: 900px;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: center;
+      text-align: center;
     }
 
-    .featured-text h2 {
+    .binacional-content h2 {
       font-size: clamp(2rem, 4vw, 3rem);
       color: var(--white);
       margin-bottom: 1.5rem;
     }
 
-    .featured-text h2 span {
+    .binacional-content h2 span {
       color: var(--gold);
     }
 
-    .featured-text p {
+    .binacional-content p {
       color: var(--gray);
       font-size: 1.05rem;
       line-height: 1.9;
@@ -566,106 +637,69 @@
       font-weight: 300;
     }
 
-    .featured-highlights {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-
-    .highlight {
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      transition: all 0.3s ease;
-    }
-
-    .highlight:hover {
-      background: rgba(201, 168, 76, 0.05);
-      border-color: rgba(201, 168, 76, 0.2);
-    }
-
-    .highlight h4 {
-      font-size: 1.1rem;
-      color: var(--gold);
-      margin-bottom: 0.5rem;
-    }
-
-    .highlight p {
-      font-size: 0.9rem;
-      color: var(--gray);
-      margin-bottom: 0;
-    }
-
     /* CONTACT SECTION */
     .contact {
       background: var(--dark-secondary);
     }
 
-    .contact-grid {
+    .contact-jurisdicciones {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      max-width: 1200px;
-      margin: 0 auto;
+      gap: 3rem;
+      max-width: 1000px;
+      margin: 0 auto 5rem;
     }
 
-    .contact-info h3 {
-      font-size: 2rem;
+    .contact-jurisdiccion {
+      background: var(--dark-tertiary);
+      padding: 3rem;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      text-align: center;
+    }
+
+    .contact-jurisdiccion h3 {
+      font-size: 1.5rem;
       color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-jurisdiccion .subtitle {
+      color: var(--gold);
+      font-size: 0.9rem;
       margin-bottom: 1.5rem;
     }
 
-    .contact-info > p {
+    .contact-jurisdiccion p {
       color: var(--gray);
-      margin-bottom: 3rem;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
       font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .contact-jurisdiccion .areas {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
       line-height: 1.8;
     }
 
-    .contact-details {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+    .contact-form-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
-    .contact-item {
-      display: flex;
-      gap: 1.5rem;
-      align-items: flex-start;
-    }
-
-    .contact-item-icon {
-      width: 50px;
-      height: 50px;
-      background: rgba(201, 168, 76, 0.1);
-      border: 1px solid rgba(201, 168, 76, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .contact-item-icon svg {
-      width: 24px;
-      height: 24px;
-      stroke: var(--gold);
-      fill: none;
-      stroke-width: 2;
-    }
-
-    .contact-item h4 {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--gold);
+    .contact-form-wrapper h3 {
+      font-size: 1.8rem;
+      color: var(--white);
       margin-bottom: 0.5rem;
-      font-weight: 500;
+      text-align: center;
     }
 
-    .contact-item p {
+    .contact-form-wrapper > p {
       color: var(--gray);
-      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 3rem;
       font-weight: 300;
     }
 
@@ -673,12 +707,6 @@
       background: var(--dark-tertiary);
       padding: 3rem;
       border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .contact-form h3 {
-      font-size: 1.5rem;
-      color: var(--white);
-      margin-bottom: 2rem;
     }
 
     .form-group {
@@ -736,6 +764,14 @@
       font-family: 'Inter', sans-serif;
     }
 
+    .confidentiality {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: var(--gray);
+      font-size: 0.85rem;
+      font-weight: 300;
+    }
+
     /* FOOTER */
     footer {
       background: var(--dark);
@@ -747,7 +783,7 @@
       max-width: 1200px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
       gap: 4rem;
       margin-bottom: 4rem;
     }
@@ -762,6 +798,13 @@
       color: var(--gray);
       font-size: 0.95rem;
       font-weight: 300;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-colegios {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.85rem;
       line-height: 1.8;
     }
 
@@ -813,35 +856,21 @@
       font-weight: 300;
     }
 
-    .footer-social {
+    .footer-legal {
       display: flex;
-      gap: 1rem;
+      gap: 1.5rem;
     }
 
-    .footer-social a {
-      width: 40px;
-      height: 40px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
+    .footer-legal a {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 300;
+      transition: color 0.3s ease;
     }
 
-    .footer-social a:hover {
-      border-color: var(--gold);
-      background: rgba(201, 168, 76, 0.1);
-    }
-
-    .footer-social a svg {
-      width: 18px;
-      height: 18px;
-      fill: var(--gray);
-      transition: fill 0.3s ease;
-    }
-
-    .footer-social a:hover svg {
-      fill: var(--gold);
+    .footer-legal a:hover {
+      color: var(--gold);
     }
 
     /* ANIMATIONS */
@@ -862,14 +891,14 @@
         padding: 6rem 2rem;
       }
 
-      .about-grid,
-      .featured-content,
-      .contact-grid {
+      .perfil-grid,
+      .jurisdicciones-grid,
+      .contact-jurisdicciones {
         grid-template-columns: 1fr;
         gap: 3rem;
       }
 
-      .about-image {
+      .perfil-image {
         height: 350px;
       }
 
@@ -924,15 +953,11 @@
         grid-template-columns: 1fr;
       }
 
-      .featured-highlights {
-        grid-template-columns: 1fr;
-      }
-
       .form-row {
         grid-template-columns: 1fr;
       }
 
-      .about-stats {
+      .perfil-stats {
         flex-wrap: wrap;
         gap: 2rem;
       }
@@ -945,6 +970,11 @@
       .footer-bottom {
         flex-direction: column;
         text-align: center;
+      }
+
+      .footer-legal {
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
 
@@ -977,11 +1007,12 @@
 
   <!-- NAVIGATION -->
   <nav id="navbar">
-    <a href="#hero" class="nav-logo">WETTSTEIN</a>
+    <a href="#hero" class="nav-logo">GERMÁN WETTSTEIN</a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">Estudio</a></li>
-      <li><a href="#areas">Áreas</a></li>
-      <li><a href="#accidentes">Accidentes</a></li>
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#barcelona">Barcelona</a></li>
+      <li><a href="#buenos-aires">Buenos Aires / CABA</a></li>
+      <li><a href="#perfil">Perfil profesional</a></li>
       <li><a href="#contact">Contacto</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -999,14 +1030,17 @@
       <div class="hero-logo-container">
         <model-viewer id="hero-logo-3d" src="model/LOGO-GER-3.glb" alt="Logo 3D" auto-rotate camera-controls disable-zoom disable-pan shadow-intensity="0" exposure="1" environment-image="neutral" camera-orbit="0deg 75deg 2m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto auto" interaction-prompt="none" style="background: transparent;"></model-viewer>
       </div>
-      <p class="hero-subtitle">Estudio Jurídico</p>
+      <p class="hero-subtitle">Abogado en Barcelona y Buenos Aires</p>
       <h1>Germán <span>Wettstein</span></h1>
+      <p class="hero-tagline">
+        Asesoramiento y defensa legal en Barcelona, Cataluña, Provincia de Buenos Aires y Ciudad Autónoma de Buenos Aires, con experiencia en asuntos jurídicos vinculados entre Argentina y España.
+      </p>
       <p class="hero-description">
-        Más de 20 años de experiencia brindando asesoramiento legal integral en Buenos Aires, Argentina. Compromiso, dedicación y resultados.
+        Más de 20 años de trayectoria profesional.
       </p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Consulta Gratuita</a>
-        <a href="#areas" class="btn btn-secondary">Áreas de Práctica</a>
+        <a href="#contact" class="btn btn-primary">Solicitar consulta legal</a>
+        <a href="https://wa.me/" class="btn btn-whatsapp" target="_blank" rel="noopener">Contactar por WhatsApp</a>
       </div>
     </div>
     <div class="scroll-indicator">
@@ -1016,166 +1050,331 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="about-grid">
-      <div class="about-image fade-in">
+  <!-- PERFIL PROFESIONAL -->
+  <section class="perfil" id="perfil">
+    <div class="perfil-grid">
+      <div class="perfil-image fade-in">
         <img src="uba-2.jpg" alt="Universidad de Buenos Aires">
       </div>
-      <div class="about-content fade-in">
-        <span class="section-label">Sobre Nosotros</span>
-        <h2>Excelencia legal con <span>compromiso humano</span></h2>
+      <div class="perfil-content fade-in">
+        <span class="section-label">Perfil Profesional</span>
+        <h2>Germán <span>Wettstein</span></h2>
         <p>
-          En el estudio jurídico de Germán Wettstein, entendemos que cada caso es único y requiere una atención personalizada. Nuestro equipo de abogados altamente calificados se dedica a proteger los derechos e intereses de nuestros clientes con la máxima profesionalidad.
+          Germán Wettstein es abogado con ejercicio profesional en Barcelona y Buenos Aires, colegiado en el Il·lustre Col·legi de l'Advocacia de Barcelona - ICAB núm. 44223, en el Colegio de Abogados de San Isidro, Provincia de Buenos Aires, y en el Colegio Público de la Abogacía de la Capital Federal.
         </p>
         <p>
-          Con sede en Buenos Aires, Argentina, ofrecemos asesoramiento legal en diversas áreas del derecho, siempre con un enfoque estratégico orientado a obtener los mejores resultados para nuestros clientes.
+          Es abogado por la Universidad de Buenos Aires. Su título fue homologado en España como Licenciado en Derecho, y posteriormente obtuvo el Máster Universitario en Abogacía por la Universitat Autònoma de Barcelona y el título profesional de advocat, expedido por la Generalitat de Catalunya - Departament de Justícia.
         </p>
-        <div class="about-stats">
+        <p>
+          Su trayectoria combina más de 20 años de experiencia profesional en asuntos penales, civiles, laborales, sucesorios, familiares y patrimoniales, con actuación en Barcelona, Cataluña, Provincia de Buenos Aires, CABA y asuntos jurídicos vinculados entre Argentina y España.
+        </p>
+        <p>
+          Su trabajo se orienta a brindar un asesoramiento directo, claro y estratégico, acompañando al cliente en cada etapa del conflicto.
+        </p>
+        <div class="perfil-stats">
           <div class="stat">
             <h3>20+</h3>
             <p>Años de experiencia</p>
           </div>
           <div class="stat">
-            <h3>1000+</h3>
-            <p>Casos resueltos</p>
-          </div>
-          <div class="stat">
-            <h3>98%</h3>
-            <p>Clientes satisfechos</p>
+            <h3>ICAB</h3>
+            <p>Núm. 44223</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRACTICE AREAS -->
-  <section class="practice-areas" id="areas">
+  <!-- JURISDICCIONES -->
+  <section class="jurisdicciones" id="jurisdicciones">
     <div class="section-header fade-in">
-      <span class="section-label">Nuestras Especialidades</span>
-      <h2 class="section-title">Áreas de Práctica</h2>
+      <span class="section-label">Jurisdicciones</span>
+      <h2 class="section-title">¿Dónde necesitás asesoramiento legal?</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="jurisdicciones-grid">
+      <div class="jurisdiccion-card fade-in">
+        <h3>Barcelona / Cataluña</h3>
+        <p class="subtitle">Abogado en Barcelona</p>
+        <p>Asesoramiento jurídico en Barcelona y Cataluña, con atención presencial y online.</p>
+        <p class="jurisdiccion-areas">
+          Derecho Penal · Extranjería y Nacionalidad · Herencias y Sucesiones · Accidentes de Tráfico · Derecho Laboral · Divorcios y Familia
+        </p>
+        <a href="#barcelona" class="btn btn-primary">Ver servicios en Barcelona</a>
+      </div>
+
+      <div class="jurisdiccion-card fade-in">
+        <h3>Buenos Aires / CABA</h3>
+        <p class="subtitle">Abogado en Buenos Aires y CABA</p>
+        <p>Defensa y asesoramiento legal en Provincia de Buenos Aires y Ciudad Autónoma de Buenos Aires.</p>
+        <p class="jurisdiccion-areas">
+          Derecho Penal · Derecho Penal Económico · Sucesiones · Accidentes de Tránsito · Derecho Laboral y ART · Divorcios y Familia
+        </p>
+        <a href="#buenos-aires" class="btn btn-primary">Ver servicios en Buenos Aires</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARCELONA PRACTICE AREAS -->
+  <section class="practice-areas" id="barcelona">
+    <div class="section-header fade-in">
+      <span class="section-label">Barcelona / Cataluña</span>
+      <h2 class="section-title">Áreas de práctica en Barcelona</h2>
       <div class="section-divider"></div>
       <p class="section-description">
-        Ofrecemos asesoramiento legal especializado en las principales áreas del derecho, con un enfoque personalizado para cada cliente.
+        El despacho brinda asistencia legal a particulares, familias, trabajadores, extranjeros y personas con asuntos jurídicos en Barcelona o vinculados con Argentina y España.
       </p>
     </div>
 
     <div class="practice-grid">
-      <!-- Derecho Sucesorio -->
-      <div class="practice-card fade-in">
-        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-          <polyline points="14 2 14 8 20 8"/>
-          <line x1="16" y1="13" x2="8" y2="13"/>
-          <line x1="16" y1="17" x2="8" y2="17"/>
-          <polyline points="10 9 9 9 8 9"/>
-        </svg>
-        <h3>Derecho Sucesorio</h3>
-        <p>Entendemos la complejidad y sensibilidad de los asuntos sucesorios. Ofrecemos asesoramiento personalizado en:</p>
-        <ul class="practice-list">
-          <li>Sucesiones testamentarias</li>
-          <li>Sucesiones intestadas</li>
-          <li>Particiones de herencias</li>
-          <li>Impugnación de testamentos</li>
-          <li>Liquidación de bienes y deudas</li>
-          <li>Derechos de herederos y legatarios</li>
-          <li>Protección de derechos de menores</li>
-        </ul>
-        <a href="#contact" class="btn-link">Consultar ahora <span>&rarr;</span></a>
-      </div>
-
-      <!-- Derecho Penal -->
       <div class="practice-card fade-in">
         <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="12" cy="12" r="10"/>
           <path d="M12 8v4l3 3"/>
         </svg>
         <h3>Derecho Penal</h3>
-        <p>Defensa penal experta tanto para personas físicas como jurídicas. Representación legal en:</p>
+        <p>Defensa y asesoramiento en procedimientos penales, asistencia a detenidos, denuncias, querellas, recursos y juicios penales.</p>
         <ul class="practice-list">
-          <li>Delitos relacionados con estupefacientes</li>
-          <li>Robo y hurto</li>
-          <li>Lesiones y amenazas</li>
-          <li>Homicidios</li>
-          <li>Defensa en investigaciones y juicios</li>
-          <li>Recursos y apelaciones</li>
-          <li>Asistencia a imputados y víctimas</li>
+          <li>Lesiones, amenazas, coacciones</li>
+          <li>Delitos contra la propiedad</li>
+          <li>Robos, hurtos, estafas</li>
+          <li>Asistencia a detenidos</li>
+          <li>Denuncias y querellas</li>
+          <li>Recursos y juicios penales</li>
         </ul>
-        <a href="#contact" class="btn-link">Consultar ahora <span>&rarr;</span></a>
+        <a href="#contact" class="btn-link">Solicitar consulta en Barcelona <span>&rarr;</span></a>
       </div>
 
-      <!-- Derecho Laboral -->
+      <div class="practice-card fade-in">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <h3>Extranjería y Nacionalidad</h3>
+        <p>Asesoramiento en trámites de extranjería y nacionalidad española, especialmente orientado a ciudadanos argentinos y latinoamericanos en Barcelona y Cataluña.</p>
+        <ul class="practice-list">
+          <li>Residencia y arraigo</li>
+          <li>Nacionalidad española</li>
+          <li>Reagrupación familiar</li>
+          <li>Renovaciones</li>
+          <li>Autorizaciones de residencia y trabajo</li>
+          <li>Recursos frente a denegaciones</li>
+        </ul>
+        <a href="#contact" class="btn-link">Solicitar consulta en Barcelona <span>&rarr;</span></a>
+      </div>
+
+      <div class="practice-card fade-in">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+        <h3>Herencias y Sucesiones</h3>
+        <p>Asesoramiento en herencias, testamentos, declaración de herederos, aceptación y partición de herencia, legítimas, adjudicación de bienes y conflictos entre herederos.</p>
+        <ul class="practice-list">
+          <li>Testamentos y declaración de herederos</li>
+          <li>Aceptación y partición de herencia</li>
+          <li>Legítimas</li>
+          <li>Adjudicación de bienes</li>
+          <li>Conflictos entre herederos</li>
+        </ul>
+        <a href="#contact" class="btn-link">Solicitar consulta en Barcelona <span>&rarr;</span></a>
+      </div>
+
+      <div class="practice-card fade-in">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="1" y="3" width="15" height="13"/>
+          <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+          <circle cx="5.5" cy="18.5" r="2.5"/>
+          <circle cx="18.5" cy="18.5" r="2.5"/>
+        </svg>
+        <h3>Accidentes de Tráfico</h3>
+        <p>Reclamación de indemnizaciones por accidentes de tráfico, lesiones, daños materiales y perjuicios derivados de siniestros viales.</p>
+        <ul class="practice-list">
+          <li>Accidentes de coche, moto, bicicleta</li>
+          <li>Accidentes a peatones</li>
+          <li>Lesiones y daños materiales</li>
+          <li>Reclamaciones frente a aseguradoras</li>
+        </ul>
+        <a href="#contact" class="btn-link">Solicitar consulta en Barcelona <span>&rarr;</span></a>
+      </div>
+
       <div class="practice-card fade-in">
         <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
           <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
         </svg>
         <h3>Derecho Laboral</h3>
-        <p>Especialistas en litigación laboral y gestión de reclamaciones ante las ART. Representamos a trabajadores y empleadores:</p>
+        <p>Asesoramiento en despidos, reclamaciones salariales, sanciones, conciliaciones laborales, accidentes laborales, incapacidades y conflictos con empleadores.</p>
         <ul class="practice-list">
-          <li>Demandas por accidentes laborales</li>
-          <li>Reclamaciones por incapacidades</li>
-          <li>Impugnaciones de resoluciones ART</li>
-          <li>Acciones por enfermedades profesionales</li>
-          <li>Asesoramiento en seguridad laboral</li>
-          <li>Recursos administrativos y judiciales</li>
+          <li>Despidos y sanciones</li>
+          <li>Reclamaciones salariales</li>
+          <li>Conciliaciones laborales</li>
+          <li>Accidentes laborales e incapacidades</li>
+          <li>Conflictos con empleadores</li>
         </ul>
-        <a href="#contact" class="btn-link">Consultar ahora <span>&rarr;</span></a>
+        <a href="#contact" class="btn-link">Solicitar consulta en Barcelona <span>&rarr;</span></a>
       </div>
 
-      <!-- Divorcio -->
       <div class="practice-card fade-in">
         <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
         </svg>
-        <h3>Divorcio</h3>
-        <p>Sólida trayectoria en derecho familiar con especialización en casos de divorcio. Servicios que abarcan:</p>
+        <h3>Divorcios y Familia</h3>
+        <p>Asesoramiento en divorcios de mutuo acuerdo y contenciosos, medidas paterno-filiales, custodia, régimen de visitas, pensión de alimentos y liquidación de bienes.</p>
         <ul class="practice-list">
-          <li>Divorcio por mutuo acuerdo</li>
-          <li>Divorcio contencioso</li>
-          <li>Separación de bienes</li>
-          <li>Liquidación de sociedad conyugal</li>
-          <li>Asesoramiento estratégico y sensible</li>
+          <li>Divorcios de mutuo acuerdo y contenciosos</li>
+          <li>Medidas paterno-filiales</li>
+          <li>Custodia y régimen de visitas</li>
+          <li>Pensión de alimentos</li>
+          <li>Liquidación de bienes</li>
         </ul>
-        <a href="#contact" class="btn-link">Consultar ahora <span>&rarr;</span></a>
+        <a href="#contact" class="btn-link">Solicitar consulta en Barcelona <span>&rarr;</span></a>
       </div>
     </div>
   </section>
 
-  <!-- FEATURED: ACCIDENTES DE TRÁNSITO -->
-  <section class="featured" id="accidentes">
-    <div class="featured-bg"></div>
-    <div class="featured-overlay"></div>
-    <div class="featured-content">
-      <div class="featured-text fade-in">
-        <span class="section-label">Especialización</span>
-        <h2>Accidentes de <span>Tránsito</span></h2>
-        <p>
-          Las carreteras de Buenos Aires son unas de las más ocupadas y peligrosas. En el estudio jurídico de Germán Wettstein somos expertos en casos de lesiones personales. Ofrecemos asesoría legal para que usted y sus seres queridos reciban la compensación que merecen.
-        </p>
-        <p>
-          Lucharemos para obtener la compensación que usted merece, incluyendo salarios perdidos, gastos médicos, dolor y sufrimiento, daños a la propiedad y mucho más.
-        </p>
-        <a href="#contact" class="btn btn-primary">Consulta Sin Costo</a>
+  <!-- BUENOS AIRES PRACTICE AREAS -->
+  <section class="practice-areas" id="buenos-aires" style="background: var(--dark);">
+    <div class="section-header fade-in">
+      <span class="section-label">Buenos Aires / CABA</span>
+      <h2 class="section-title">Áreas de práctica en Buenos Aires / CABA</h2>
+      <div class="section-divider"></div>
+      <p class="section-description">
+        Atención en asuntos penales, sucesorios, laborales, accidentes de tránsito, ART, divorcios y familia.
+      </p>
+    </div>
+
+    <div class="practice-grid">
+      <div class="practice-card fade-in">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 8v4l3 3"/>
+        </svg>
+        <h3>Derecho Penal</h3>
+        <p>Defensa penal en investigaciones y procesos criminales.</p>
+        <ul class="practice-list">
+          <li>Robos, robos agravados, robo con arma</li>
+          <li>Delitos contra la propiedad y las personas</li>
+          <li>Lesiones, amenazas, estafas, defraudaciones</li>
+          <li>Causas penales complejas</li>
+          <li>Hechos graves contra la propiedad</li>
+          <li>Transporte de caudales, sustracción de mercaderías</li>
+        </ul>
+        <a href="#contact" class="btn-link">Solicitar consulta en Buenos Aires <span>&rarr;</span></a>
       </div>
-      <div class="featured-highlights fade-in">
-        <div class="highlight">
-          <h4>Muerte por negligencia</h4>
-          <p>Representación experta en casos de fatalidades causadas por negligencia de terceros.</p>
-        </div>
-        <div class="highlight">
-          <h4>Accidentes en motocicletas</h4>
-          <p>Defensa especializada para motociclistas lesionados en accidentes de tránsito.</p>
-        </div>
-        <div class="highlight">
-          <h4>Colisiones de automóviles</h4>
-          <p>Asesoramiento integral en todo tipo de colisiones vehiculares.</p>
-        </div>
-        <div class="highlight">
-          <h4>Responsabilidad del fabricante</h4>
-          <p>Reclamaciones por defectos de fabricación que causaron accidentes.</p>
-        </div>
+
+      <div class="practice-card fade-in">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+          <line x1="8" y1="21" x2="16" y2="21"/>
+          <line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+        <h3>Derecho Penal Económico</h3>
+        <p>Asesoramiento y defensa en delitos económicos, financieros y tributarios.</p>
+        <ul class="practice-list">
+          <li>Delitos económicos y financieros</li>
+          <li>Defraudaciones tributarias</li>
+          <li>Lavado de activos</li>
+          <li>Delitos societarios</li>
+        </ul>
+        <a href="#contact" class="btn-link">Solicitar consulta en Buenos Aires <span>&rarr;</span></a>
       </div>
+
+      <div class="practice-card fade-in">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+        <h3>Sucesiones</h3>
+        <p>Tramitación de sucesiones ab-intestato y testamentarias, declaratorias de herederos, inscripción de bienes, particiones hereditarias y administración de bienes sucesorios.</p>
+        <ul class="practice-list">
+          <li>Sucesiones ab-intestato y testamentarias</li>
+          <li>Declaratorias de herederos</li>
+          <li>Inscripción de bienes</li>
+          <li>Particiones hereditarias</li>
+          <li>Administración de bienes sucesorios</li>
+          <li>Asesoramiento a herederos y familias</li>
+        </ul>
+        <a href="#contact" class="btn-link">Solicitar consulta en Buenos Aires <span>&rarr;</span></a>
+      </div>
+
+      <div class="practice-card fade-in">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="1" y="3" width="15" height="13"/>
+          <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+          <circle cx="5.5" cy="18.5" r="2.5"/>
+          <circle cx="18.5" cy="18.5" r="2.5"/>
+        </svg>
+        <h3>Accidentes de Tránsito</h3>
+        <p>Reclamos por daños y perjuicios derivados de accidentes de tránsito, lesiones, incapacidad, daños materiales, reclamos contra aseguradoras, mediaciones y juicios civiles.</p>
+        <ul class="practice-list">
+          <li>Lesiones e incapacidad</li>
+          <li>Daños materiales</li>
+          <li>Reclamos contra aseguradoras</li>
+          <li>Mediaciones y juicios civiles</li>
+        </ul>
+        <a href="#contact" class="btn-link">Solicitar consulta en Buenos Aires <span>&rarr;</span></a>
+      </div>
+
+      <div class="practice-card fade-in">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+        </svg>
+        <h3>Derecho Laboral y ART</h3>
+        <p>Asesoramiento en despidos, trabajo no registrado, diferencias salariales, indemnizaciones, accidentes de trabajo, enfermedades profesionales, reclamos contra ART e incapacidad laboral.</p>
+        <ul class="practice-list">
+          <li>Despidos y trabajo no registrado</li>
+          <li>Diferencias salariales e indemnizaciones</li>
+          <li>Accidentes de trabajo</li>
+          <li>Enfermedades profesionales</li>
+          <li>Reclamos contra ART</li>
+          <li>Incapacidad laboral</li>
+        </ul>
+        <a href="#contact" class="btn-link">Solicitar consulta en Buenos Aires <span>&rarr;</span></a>
+      </div>
+
+      <div class="practice-card fade-in">
+        <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        <h3>Divorcios y Familia</h3>
+        <p>Asesoramiento en divorcios, alimentos, cuidado personal, régimen de comunicación, compensación económica, liquidación de sociedad conyugal y acuerdos familiares.</p>
+        <ul class="practice-list">
+          <li>Divorcios</li>
+          <li>Alimentos y cuidado personal</li>
+          <li>Régimen de comunicación</li>
+          <li>Compensación económica</li>
+          <li>Liquidación de sociedad conyugal</li>
+          <li>Acuerdos familiares</li>
+        </ul>
+        <a href="#contact" class="btn-link">Solicitar consulta en Buenos Aires <span>&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BINACIONAL -->
+  <section class="binacional" id="binacional">
+    <div class="binacional-bg"></div>
+    <div class="binacional-overlay"></div>
+    <div class="binacional-content fade-in">
+      <span class="section-label">Asesoramiento Internacional</span>
+      <h2>Asesoramiento jurídico entre <span>Barcelona y Buenos Aires</span></h2>
+      <p>
+        Asistencia legal para personas, familias y profesionales con asuntos jurídicos vinculados entre Argentina y España.
+      </p>
+      <p>
+        Orientación para argentinos residentes en Barcelona, personas con intereses legales en ambos países, familias con bienes en Argentina y España, herencias internacionales, poderes, documentación, residencia, conflictos familiares, reclamos patrimoniales y consultas legales transnacionales.
+      </p>
+      <p>
+        La formación y experiencia profesional en ambos sistemas jurídicos permite brindar una mirada práctica y estratégica para resolver cuestiones legales entre Barcelona y Buenos Aires.
+      </p>
+      <a href="#contact" class="btn btn-primary">Consultar por asunto binacional</a>
     </div>
   </section>
 
@@ -1183,106 +1382,82 @@
   <section class="contact" id="contact">
     <div class="section-header fade-in">
       <span class="section-label">Contacto</span>
-      <h2 class="section-title">Consulta Inicial Gratuita</h2>
+      <h2 class="section-title">Atención presencial y online</h2>
       <div class="section-divider"></div>
       <p class="section-description">
-        Contáctenos para una evaluación sin costo de su caso. Estamos aquí para ayudarle.
+        Consultas en Barcelona, Buenos Aires, Provincia de Buenos Aires y CABA.
       </p>
     </div>
 
-    <div class="contact-grid">
-      <div class="contact-info fade-in">
-        <h3>Estamos a su disposición</h3>
-        <p>
-          Nuestro equipo de abogados está comprometido en brindar el mejor asesoramiento legal. No dude en contactarnos para cualquier consulta.
+    <div class="contact-jurisdicciones">
+      <div class="contact-jurisdiccion fade-in">
+        <h3>Consultas en Barcelona</h3>
+        <p class="subtitle">Asesoramiento jurídico en Barcelona y Cataluña</p>
+        <p class="areas">
+          Derecho Penal · Extranjería · Herencias · Accidentes de Tráfico · Derecho Laboral · Divorcios y Familia
         </p>
-        <div class="contact-details">
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <div>
-              <h4>Dirección</h4>
-              <p>Buenos Aires, Argentina</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-            </div>
-            <div>
-              <h4>Teléfono</h4>
-              <p>[número de contacto]</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </div>
-            <div>
-              <h4>Email</h4>
-              <p>contacto@wettsteinabogados.com</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-            </div>
-            <div>
-              <h4>Horario</h4>
-              <p>Lunes a Viernes: 9:00 - 18:00</p>
-            </div>
-          </div>
-        </div>
+        <a href="#contact-form" class="btn btn-primary">Contactar por asunto en Barcelona</a>
       </div>
 
-      <div class="contact-form fade-in">
-        <h3>Envíenos su consulta</h3>
-        <form id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Teléfono</label>
-              <input type="tel" id="phone" name="phone">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="area">Área de consulta</label>
-            <select id="area" name="area">
-              <option value="">Seleccione un área</option>
-              <option value="sucesorio">Derecho Sucesorio</option>
-              <option value="penal">Derecho Penal</option>
-              <option value="accidentes">Accidentes de Tránsito</option>
-              <option value="laboral">Derecho Laboral</option>
-              <option value="divorcio">Divorcio</option>
-              <option value="otro">Otro</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" placeholder="Describa brevemente su consulta..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar Consulta</button>
-        </form>
+      <div class="contact-jurisdiccion fade-in">
+        <h3>Consultas en Buenos Aires / CABA</h3>
+        <p class="subtitle">Defensa y asesoramiento legal en Provincia de Buenos Aires y CABA</p>
+        <p class="areas">
+          Derecho Penal · Penal Económico · Sucesiones · Accidentes de Tránsito · Derecho Laboral y ART · Divorcios y Familia
+        </p>
+        <a href="#contact-form" class="btn btn-primary">Contactar por asunto en Buenos Aires</a>
       </div>
+    </div>
+
+    <div class="contact-form-wrapper" id="contact-form">
+      <h3 class="fade-in">Formulario de contacto</h3>
+      <p class="fade-in">Complete el formulario y nos pondremos en contacto con usted a la brevedad.</p>
+
+      <form class="contact-form fade-in" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nombre y apellido</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="jurisdiction">País o jurisdicción del asunto</label>
+          <select id="jurisdiction" name="jurisdiction" required>
+            <option value="">Seleccione una jurisdicción</option>
+            <option value="barcelona">Barcelona / Cataluña</option>
+            <option value="buenos-aires">Buenos Aires / CABA</option>
+            <option value="argentina">Argentina</option>
+            <option value="ambos">Ambos países</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="area">Área de consulta</label>
+          <select id="area" name="area" required>
+            <option value="">Seleccione un área</option>
+            <option value="penal">Derecho Penal</option>
+            <option value="extranjeria">Extranjería</option>
+            <option value="herencias">Herencias / Sucesiones</option>
+            <option value="accidentes">Accidentes de Tráfico / Tránsito</option>
+            <option value="laboral">Derecho Laboral / ART</option>
+            <option value="familia">Divorcios y Familia</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" placeholder="Cuéntenos brevemente el motivo de su consulta..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+      </form>
+      <p class="confidentiality fade-in">La información enviada será tratada con confidencialidad profesional.</p>
     </div>
   </section>
 
@@ -1290,51 +1465,45 @@
   <footer>
     <div class="footer-content">
       <div class="footer-brand">
-        <h3>WETTSTEIN</h3>
+        <h3>Germán Wettstein</h3>
         <p>
-          Estudio jurídico en Buenos Aires con más de 20 años de experiencia. Comprometidos con la excelencia legal y la defensa de los derechos de nuestros clientes.
+          Asesoramiento y defensa legal en Barcelona, Cataluña, Provincia de Buenos Aires y Ciudad Autónoma de Buenos Aires.
+        </p>
+        <p class="footer-colegios">
+          Il·lustre Col·legi de l'Advocacia de Barcelona - ICAB núm. 44223<br>
+          Colegio de Abogados de San Isidro, Provincia de Buenos Aires<br>
+          Colegio Público de la Abogacía de la Capital Federal
         </p>
       </div>
       <div class="footer-column">
-        <h4>Áreas</h4>
+        <h4>Áreas principales</h4>
         <ul>
-          <li><a href="#areas">Derecho Sucesorio</a></li>
-          <li><a href="#areas">Derecho Penal</a></li>
-          <li><a href="#accidentes">Accidentes</a></li>
-          <li><a href="#areas">Derecho Laboral</a></li>
-          <li><a href="#areas">Divorcio</a></li>
+          <li><a href="#barcelona">Derecho Penal</a></li>
+          <li><a href="#barcelona">Extranjería</a></li>
+          <li><a href="#barcelona">Herencias y Sucesiones</a></li>
+          <li><a href="#barcelona">Accidentes</a></li>
+          <li><a href="#barcelona">Derecho Laboral</a></li>
+          <li><a href="#barcelona">Divorcios y Familia</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h4>Estudio</h4>
+        <h4>Navegación</h4>
         <ul>
-          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#barcelona">Barcelona</a></li>
+          <li><a href="#buenos-aires">Buenos Aires / CABA</a></li>
+          <li><a href="#perfil">Perfil profesional</a></li>
           <li><a href="#contact">Contacto</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Preguntas Frecuentes</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="#">Política de Privacidad</a></li>
-          <li><a href="#">Términos de Uso</a></li>
-          <li><a href="#">Aviso Legal</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Estudio Jurídico Germán Wettstein. Todos los derechos reservados.</p>
-      <div class="footer-social">
-        <a href="#" aria-label="Facebook">
-          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        </a>
-        <a href="#" aria-label="Instagram">
-          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
-        </a>
-        <a href="#" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
+      <p>&copy; 2026 Germán Wettstein - Abogado en Barcelona y Buenos Aires. Todos los derechos reservados.</p>
+      <div class="footer-legal">
+        <a href="#">Aviso legal</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Política de cookies</a>
+        <a href="#contact">Contacto</a>
       </div>
     </div>
   </footer>
